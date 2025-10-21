@@ -5,7 +5,9 @@
   "scripts": {},
   "private": true,
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "nx": "21.6.5"
+  },
   "workspaces": [
     "apps/*",
     "libs/*"
