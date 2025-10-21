@@ -31,12 +31,5 @@
         "targetName": "lint"
       }
     }
-  ],
-  "targetDefaults": {
-    "@nx/esbuild:esbuild": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
-    }
-  }
+  ]
 }
