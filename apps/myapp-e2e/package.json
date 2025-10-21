@@ -1,0 +1,26 @@
+{
+  "name": "@tsmono/myapp-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@tsmono/myapp"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/myapp-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@tsmono/myapp:build",
+          "@tsmono/myapp:serve"
+        ]
+      }
+    }
+  }
+}
