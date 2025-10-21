@@ -1,0 +1,15 @@
+{
+  "name": "@tsmono/myapp",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/myapp/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "options": {
+        "buildTarget": "myapp:build",
+        "watch": true
+      }
+    }
+  }
+}
