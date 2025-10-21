@@ -7,7 +7,7 @@
     "serve": {
       "executor": "@nx/js:node",
       "options": {
-        "buildTarget": "myapp:build",
+        "buildTarget": "@tsmono/myapp:build",
         "watch": true
       }
     }
