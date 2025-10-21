@@ -4,6 +4,14 @@
   "sourceRoot": "apps/myapp/src",
   "projectType": "application",
   "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "{projectRoot}/dist",
+        "main": "{projectRoot}/src/index.ts",
+        "tsConfig": "{projectRoot}/tsconfig.lib.json"
+      }
+    },
     "serve": {
       "executor": "@nx/js:node",
       "options": {
